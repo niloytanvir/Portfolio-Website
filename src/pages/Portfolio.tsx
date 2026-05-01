@@ -1,16 +1,19 @@
-import { CheckCircle, Terminal, Bug, TestTube, Shield, Database, Globe, GitBranch, Mail, Linkedin, Github, ExternalLink } from "lucide-react";
+import { CheckCircle, Terminal, Bug, TestTube, Shield, Database, Globe, GitBranch, Mail, Linkedin, Github, ExternalLink, Code, Cpu, Server, Eye } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const skills = [
-  { name: "Selenium / Cypress", icon: Globe },
-  { name: "API Testing (Postman)", icon: Terminal },
+  { name: "Selenium", icon: Globe },
+  { name: "Cypress", icon: Cpu },
+  { name: "Playwright", icon: Code },
+  { name: "API Testing (Postman)", icon: Server },
   { name: "CI/CD Pipelines", icon: GitBranch },
   { name: "SQL & Databases", icon: Database },
   { name: "Security Testing", icon: Shield },
   { name: "Bug Tracking (Jira)", icon: Bug },
   { name: "Performance Testing", icon: TestTube },
   { name: "Test Automation", icon: CheckCircle },
+  { name: "Manual Testing", icon: Eye },
 ];
 
 const experience = [
@@ -19,8 +22,15 @@ const experience = [
     company: "Data-Path Limited",
     period: "2025 – Present",
     bullets: [
-      "Lead automation framework using Cypress & TypeScript",
-      "Reduced regression testing time by 60%",
+      "Analyze and validate business requirements and technical designs, identifying gaps and improving requirement clarity.",
+      "Develop comprehensive test scenarios and test cases aligned with functional and technical requirements.",
+      "Execute test cases, track and report defects in Jira, and collaborate closely with developers to ensure timely resolution.",
+      "Re-test resolved defects to verify fixes and maintain product quality.",
+      "Perform regression and sanity testing to identify critical defects and ensure stable, high-quality releases.",
+      "Conduct API testing using Postman, validating backend functionality and reliability.",
+      "Perform database testing using SQL queries to ensure data integrity, accurate data flow, and consistency across tables.",
+      "Build and maintain a robust automation framework and develop end-to-end test scripts using Playwright.",
+      "Create and maintain automated regression test suites using Cypress, improving efficiency and reducing manual testing effort.",
       "Implemented CI/CD integration with GitHub Actions",
     ],
   },
@@ -29,9 +39,14 @@ const experience = [
     company: "Banglalink Digital Communications Ltd.",
     period: "2023 – 2024",
     bullets: [
-      "Wrote 200+ automated test cases for REST APIs",
-      "Performed manual testing for mobile & web apps",
-      "Collaborated on test strategy & documentation",
+      "Conducted detailed Testing on different Banglalink Digital products like MyBL Super App, Banglalink Website, Toffe, Ryze App and Self Retailer App BL Power.",
+      "Review and analyze requirements, specifications, and technical design documents, providing timely feedback.",
+      "Writing well-structured, detailed, and comprehensive  test cases on core Telco features like Recharge, Buying Product, Loyalty management system, Referral program etc.",
+      "Responsible for detailed User Acceptance testing of different partner integration on myBl App like Shadhin Music, Deen Islamic section, Pay Utility Bill, 10 minute School, and DocTime.",
+      "Execute test cases, identify and report issues found, and verify that issues are resolved.",
+      "Report software defects using bug-tracking tools.",
+      "Conduct detailed sanity and regression testing on different versions of app builds.",
+      "API testing with Postman, Newman.",
     ],
   },
   {
@@ -108,11 +123,11 @@ const Portfolio = () => {
               </a>
             </div>
           </div>
-          <div className="shrink-0 animate-fade-in">
+          <div className="shrink-0 animate-fade-in flex items-center justify-center">
             <img
               src={profilePhoto}
               alt="Tanvir Ahmed"
-              className="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover border-4 border-primary/30 shadow-lg"
+              className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover object-top border-4 border-primary/30 shadow-lg"
             />
           </div>
         </div>
